@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "RobotoBold";
+  src: local("RobotoMono"), url(./fonts/RobotoMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: "RobotoReg";
+  src: local("RobotoMono"), url(./fonts/RobotoMono-Regular.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +28,7 @@ body {
   color: rgb(73, 73, 73);
   margin: 50px 0;
   font-size: 70px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "RobotoBold", sans-serif;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -31,17 +41,14 @@ body {
 .list-item {
   max-width: 519px;
   width: 100%;
-  display: block; 
+  display: block;
   text-decoration: none;
   margin-bottom: 30px;
-  height: 100%;
-  max-height: 500px;
+  height: auto;
 
   -webkit-box-shadow: 15px 16px 8px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 15px 16px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 15px 16px 8px 0px rgba(34, 60, 80, 0.2);
-
-
 }
 
 .img {
@@ -51,23 +58,11 @@ body {
 
 .footer {
   padding: 20px 0;
- 
 }
 
 .link {
+  font-family: "RobotoReg";
   color: rgb(73, 73, 73);
   display: block;
   margin-bottom: 10px;
 }
-/* 
-.list-item {
-  display: block; 
-  overflow: hidden; 
-}
-.list-item  {
-  transition: 1s;
-  display: block; 
-}
-.list-item:hover {
-  transform: skew(-2deg); 
-} */
